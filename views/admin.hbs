@@ -1,0 +1,47 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="parte1">
+            <p class="navbar-brand">
+                <span class="empresa">GuardeAqui<br /></span>
+                <span class="servico">Sistema de Armazenamento de Arquivos</span>
+            </p>
+        </div>
+        <div class="parte2 servico">
+            <span>{{user.displayName}} <i class="far fa-user-circle"></i></span>
+        </div>
+        <div class="parte3">
+            <a class="btn btn-outline-secondary" href="/logout">Logout</a>
+        </div>
+    </nav>
+</header>
+<h3>
+     <a href="/file" class="btn btn-danger">
+        <i class="fa fa-plus"> </i> Criar novo
+    </a>
+    Lista de Arquivos
+</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+            <tr>
+                <td>{{this}}</td>
+                <td>
+                    <a href="/file/{{this}}">
+                        <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+                    </a>
+                    <a href="/file/delete/{{this}}" onclick="return confirm('Tem certeza que deseja excluir?');">
+                        <i class="fa fa-trash fa-lg" aria-hidden="true">
+                         
+                        </i>
+                    </a>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

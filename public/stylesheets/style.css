@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-top: 40px;
+}
+
+.salvar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.lixo {
+  text-align: center;
+}
+
+.col-arquivo {
+  width: 90%;
+}
+
+.col-remover {
+  width: 10%;
+}
+
+.frame {
+  padding-top: 30px;
+}
+
+.areaupload {
+  background: #f1f1f1;
+  border: black dashed 1px;
+  height: 200px;
+  text-align: center;
+  color: #000;
+  padding-top: 80px;
+  text-align: center;
+  vertical-align: central;
+}
+
+.parte1{
+  width: 50%;
+  padding-left: 20px;
+}
+.parte2{
+  width: 30%;
+  text-align: end;
+  padding-right: 20px;
+}
+span {
+  color: #f5f5f5;
+}
+i {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.parte3{
+  width: 20%;
+  text-align: end;
+  padding-right: 20px;
+}
+.empresa {
+  font: 32px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #f5f5f5;
+}
+.servico {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: rgb(233, 235, 114);
+  font-style: italic;
+}
+.alerta {
+  color: rgb(136, 17, 17);
+  font-style: italic;
+}
+.marca {
+  padding-top: 150px;
+}
+.logo {
+  width: 350px;
+  height: 100px;
+}
+.icone {
+  width: 72px;
+  height: 72px;
+}
+.formulario {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

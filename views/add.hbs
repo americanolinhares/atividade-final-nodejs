@@ -1,0 +1,32 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="parte1">
+            <p class="navbar-brand">
+                <span class="empresa">GuardeAqui<br /></span>
+                <span class="servico">Sistema de Armazenamento de Arquivos</span>
+            </p>
+        </div>
+        <div class="parte2 servico">
+            <span>{{user.displayName}} <i class="far fa-user-circle"></i></span>
+        </div>
+        <div class="parte3">
+            <a class="btn btn-outline-secondary" href="/logout">Logout</a>
+        </div>
+    </nav>
+</header>
+<h3>{{viewTitle}}</h3>
+
+    <form action="/file" method="POST" autocomplete="off">
+         <div class="form-group">
+            <label>Caminho Arquivo</label>
+            <input type="text" class="form-control" name="fullPath" value="{{path}}" placeholder="Caminho Completo">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Submeter</button>
+            <a href="/file/list" class="btn btn-danger">
+                <i class="fa fa-list-alt"></i>Ver todos
+            </a>
+        </div>
+    </form>
